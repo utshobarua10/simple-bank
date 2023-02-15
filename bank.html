@@ -12,25 +12,49 @@
     <header>
         <h1 class="text-5xl text-center" >Withdraw <span class="text-5xl font-semibold text-slate-900">Money</span></h1>
     </header>
+    <!-- Header Section -->
     <section class="w-9/12 mx-auto p-5 rounded-md space-y-3 mt-3">   
         <div class="grid grid-cols-3 gap-4 font-semibold text-white">
             <div class="bg-gray-800 p-10 rounded-md">
                 <h5 class="text-3xl">Deposit</h5>
-                <h1 class="text-5xl">$00</h1>
+                <h1 class="text-5xl">$<span id="currentDeposit">00</span></h1>
             </div>
             <div class="bg-gray-700 p-10 rounded-md">
                 <h5 class="text-3xl">Withdraw</h5>
-                <h1 class="text-5xl">$00</h1>
+                <h1 class="text-5xl">$<span id="currentWithdraw">00</span></h1>
             </div>
             <div class="bg-gray-600 p-10 rounded-md">
                 <h5 class="text-3xl">Balance</h5>
-                <h1 class="text-5xl">$1240</h1>
+                <h1 class="text-5xl">$<span id="currentBalance">1240</span></h1>
+
             </div>
 
 
         </div>
     </section>
 
-<script src="js/index.js" ></script>
+    <!-- Input Field section -->
+    <section class="w-9/12 mx-auto p-5 rounded-md space-y-3 mt-3">   
+        <div class="grid grid-cols-2 gap-4 font-semibold text-white">
+            <div class="bg-zinc-700	 p-10 rounded-md space-y-3">
+                <h5 class="text-3xl">Please Deposit</h5>
+                <input type="text" class="p-2 rounded-md w-9/12  block text-black" name=""  id="depositAmount" placeholder="Enter The Ammount">
+                <button class="bg-slate-900	text-white p-3 rounded-md hover:bg-gray-800" id="deposit-btn">Deposit</button>
+
+            </div>
+            <div class="bg-zinc-800	 p-10 rounded-md space-y-3">
+                <h5 class="text-3xl">Please Withdraw</h5>
+                <input type="text" class="p-2 rounded-md w-9/12  block text-black" name="" id="withdrawAmount" placeholder="Enter The Ammount  ">
+                <button class="bg-slate-900	text-white p-3 rounded-md hover:bg-gray-800" id="withdraw-btn">Withdraw</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+<script src="js/deposit.js" ></script>
+
+<script src="js/withdraw.js" ></script>
 </body>
 </html>
